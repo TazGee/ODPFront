@@ -513,3 +513,75 @@ p {
     font-size: 12px;
     text-align: center;
 }
+
+.team-card{
+    position:relative;
+    background:rgba(17,27,37,0.78);
+    border:1px solid var(--border);
+    border-radius:20px;
+    backdrop-filter:blur(12px);
+    box-shadow: inset 0 1px 4px rgba(255,255,255,0.03), 0 0 40px rgba(0,0,0,0.45);
+    padding:28px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.team-panel {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.lista-igraca-informacije {
+    background:rgba(15,23,32,0.92);
+    border:1px solid var(--border);
+    border-radius:12px;
+    backdrop-filter:blur(10px);
+    box-shadow: inset 0 1px 4px rgba(255,255,255,0.03), 0 0 20px rgba(0,0,0,0.4);
+    width: 90%;
+    margin: 20px auto 0px auto;
+}
+
+.igrac {
+    background:rgba(15,23,32,0.92);
+    border:1px solid var(--border);
+    border-radius:8px;
+    backdrop-filter:blur(10px);
+    box-shadow: inset 0 1px 4px rgba(255,255,255,0.03), 0 0 20px rgba(0,0,0,0.4);
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px;
+}
+
+.slika-igraca {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.ime-igraca {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tim-informacija {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    margin: 10px 20px;
+}
+
+.team-panel-logo {
+    align-self: center;
+    width: 50%;
+    margin: 15px auto 0px auto;
+}
+
+.opis-tima {
+    margin: 0px 20px 20px 20px;
+}
