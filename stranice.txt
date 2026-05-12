@@ -1,0 +1,104 @@
+registracija:
+- korisnicko ime (gamer tag)
+- pravo ime
+- email
+- lozinka
+- profilna slika
+
+login:
+- korisnicko ime (gamer tag)
+- lozinka
+
+katalog igara:
+- javno dostupan
+- svaka igra prikazuje naziv, logotip, zanr i maksimalan broj igraca po timu
+- za svaku igru pokazati broj aktivnih igraca na turnirima
+- klik na igru filtrira i prikazuje sve turnire samo za tu igru
+- ako je korisnik administrator dodati opcije za dodavanje, izmenu i brisanje igre (samo ako nema turnira za tu igru)
+
+stranica za izmenu igre:
+- sadrzi sva polja igre da mogu da se izmene
+- dugmici za cuvanje i reset
+
+kreiranje tima:
+- kreira se tim po imenu, tagu, logotipu i opisu
+
+tim:
+- kapiten moze da salje pozivnice ostalima (stizu im kao obavestenja)
+- kapiten ima opcije da izbacuje igrace ili da im da kapitena
+- ako igrac nije kapiten moze da napusti tim
+
+kreiranje turnira:
+- administrator samo moze da kreira turnir
+- bira se konkretna igra 
+
+turniri:
+- lista svih turnira sa filterima po igri, statusu i formatu
+- za svaki turnir prikazati naziv, igru, format, maksimalan broj timova, rok za prijavu, nagradni fond i status turnira
+- kapiten ima opciju da prijavi tim
+- administrator moze da potvrdi ili da odbije prijavu tima i moze da diskvalifikuje tim tokom trajanja
+- administrator moze da zakljuca prijave i pokrene generisanje meceva
+
+turnir:
+- prikaz svih meceva u obliku bracket dijagrama
+- administrator unosi rezultate a timovi se dalje automatski popunjavaju za sledece meceve
+- kapiten moze da oznaci koji igraci iz tima ucestvuju u turniru
+- filtriranje meceva po rundi i timu
+- prati/otprati dugme da korisnik moze da doda ili skloni turnir sa watch liste
+
+praceni turniri:
+- svaki korisnik moze da doda neki od aktivnih turnira na watch list
+- prikazuju se najnoviji mecevi i rezultati pracenih turnira
+
+admin panel:
+- kreiranje turnira i upravljanje turnirima
+- upravljanje katalogom igara
+- pregled svih prijava timova, potvrdjivanje i diskvalifikacija
+- generisanje rasporeda meceva za turnir
+- unosenje rezultata i napredovanje timova kroz runde
+- pregled svih korisnika sa opcijom izmene uloge
+- health dashboard za bazu podataka
+- pregled kompletnog audit loga
+
+unosenje rezultata:
+- bira se mec za koji se unosi rezultat
+
+svi korisnici:
+- prikazuje listu svih korisnika i daje opciju izmene uloge
+
+health dashboard:
+- prikazuje health status baze
+
+audit log:
+- prikazuje log cele aplikacije
+
+
+===============================================================================
+javno dostupno:
+ - landing page
+ - lista turnira sa filterima
+ - detalji turnira + bracket
+ - katalog igara
+ - javni profil tima
+ - prijava / registracija
+
+prijavljen igrac:
+ - dashboard
+ - moji timovi
+ - detalji tima + upravljanje
+ - prijava na turnir
+ - nastup u mecevima
+ - watchlist
+ - moji mecevi
+ - podesavanja profila
+
+administrator:
+ - dashboard
+ - upravljanje turnirima
+ - kreiranje turnira
+ - upravljanje prijavama
+ - unos rezultata meceva
+ - katalog igara
+ - svi korisnici + uloge
+ - health dashboard
+ - audit log
