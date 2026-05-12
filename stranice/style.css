@@ -358,7 +358,7 @@ form{
     padding:28px;
 }
 
-.turniri-lista {
+.lista-divova {
     width: 95%;
     display: flex; 
     flex-direction: column;
@@ -480,4 +480,36 @@ p {
     display: flex;
     justify-content: center;
     align-content: center;
+}
+
+.igra {
+    height:120px;
+    background:rgba(15,23,32,0.92);
+    border:1px solid var(--border);
+    border-radius:16px;
+    backdrop-filter:blur(10px);
+    box-shadow: inset 0 1px 4px rgba(255,255,255,0.03), 0 0 20px rgba(0,0,0,0.4);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 0 15px;
+    z-index:100;
+    width: 90%;
+    margin: 10px;
+}
+
+.igra-details {
+    height:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 22px;
+    width: 100%;
+    margin: 10px;
+}
+
+.igra-informacija {
+    margin: 0px 12px 0px 12px;
+    font-size: 12px;
+    text-align: center;
 }
