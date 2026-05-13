@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PusleGrid</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-dot"></div>
+            <h1 class="header-naslov">PulseGrid</h1>
+        </div>
+
+        <nav>
+            <a href="#" class="header-nav-btn">Početna</a>
+            <a href="#" class="header-nav-btn">Turniri</a>
+            <a href="#" class="header-nav-btn">Igre</a>
+            <a href="#" class="header-nav-btn">O nama</a>
+        </nav>
+        <button class="header-user">
+            <div class="profile-button">
+                <img class="header-profilna" src="ikonice/person.png" alt="">
+                Korisničko ime
+            </div>
+        </button>
+    </header>
+    <main>
+        <div class="team-card">
+            <form id="izmena-profila">
+            <h2 style="text-align: center; font-size: 32px;">Uredjivanje profila</h2><br>
+            <div class="row">
+                <div class="team-panel">
+                    <div class="uredjivanje-profila-lista">
+                        <div class="uredjivanje-profila-polje">
+                            <p>Korisničko ime</p>
+                            <input type="text" class="input-field" value="KorisničkoIme">
+                            <p>Ime i Prezime</p>
+                            <input type="text" class="input-field" value="Ime Prezime">
+                            <p>Email</p>
+                            <input type="text" class="input-field" value="blabla@gmail.com">
+                            <p>Lozinka</p>
+                            <input type="password" class="input-field" value="test123">
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="team-panel">
+                    <div class="uredjivanje-profila-lista">
+                        <div class="uredjivanje-profila-polje">
+                            <img src="ikonice/person.png" class="edit-profile-izmena-slike">
+                            <br>
+                            <input class="choose-file" type="file" />
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <input type="submit" class="input-button" value="Izmeni">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

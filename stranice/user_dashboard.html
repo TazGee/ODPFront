@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-dot"></div>
+            <h1 class="header-naslov">PulseGrid</h1>
+        </div>
+
+        <nav>
+            <a href="#" class="header-nav-btn">Početna</a>
+            <a href="#" class="header-nav-btn">Turniri</a>
+            <a href="#" class="header-nav-btn">Igre</a>
+            <a href="#" class="header-nav-btn">O nama</a>
+        </nav>
+        <button class="header-user">
+            <div class="profile-button">
+                <img class="header-profilna" src="ikonice/person.png" alt="">
+                Korisničko ime
+            </div>
+        </button>
+    </header>
+    <main>
+        <div class="grid-container">
+            <div class="dashboard-card">
+                <img src="ikonice/admin.png" alt="" class="dashboard-icon">
+                <div class="dashboard-card-content">
+                    <h2>Izmenite profil</h2>
+                    <p>
+                        Stranica za promenu podataka vezanih za lični profil. 
+                        Omogućava izmenu osnovnih podataka poput korisničkog imena, imena i prezimena, 
+                        lozinke i profilne slike. 
+                    </p>
+                    <button class="card-btn">Izmenite profil</button>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <img src="ikonice/teams.png" alt="" class="dashboard-icon">
+                <div class="dashboard-card-content">
+                    <h2>Moji timovi</h2>
+                    <p>
+                        Na ovoj stranici možete pogledati sve timove u kojima se trenutno nalazite i možete upravljati
+                        ovim timovima. 
+                    </p>
+                    <button class="card-btn">Pogledajte timove</button>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <img src="ikonice/joystick.png" alt="" class="dashboard-icon">
+                <div class="dashboard-card-content">
+                    <h2>Moji mečevi</h2>
+                    <p>
+                        Omogućava vam pregled vaših mečeva, odnosno mečeva na kojima ste učestvovali. Takođe, prikazuje
+                        vam i vaše nastupe na mečevima.
+                    </p>
+                    <button class="card-btn">Pogledajte mečeve</button>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <img src="ikonice/watchlist.png" alt="" class="dashboard-icon">
+                <div class="dashboard-card-content">
+                    <h2>Watchlist</h2>
+                    <p>
+                        Lista aktivnih i predstojećih mečeva čije rezultate pratite sortirani po datumu početka.
+                    </p>
+                    <button class="card-btn">Otvorite watchlist-u</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

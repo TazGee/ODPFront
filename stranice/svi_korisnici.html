@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igre</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-dot"></div>
+            <h1 class="header-naslov">PulseGrid</h1>
+        </div>
+        <nav>
+            <a href="#" class="header-nav-btn">Početna</a>
+            <a href="#" class="header-nav-btn">Turniri</a>
+            <a href="#" class="header-nav-btn">Igre</a>
+            <a href="#" class="header-nav-btn">O nama</a>
+        </nav>
+        <button class="header-user">
+            <div class="profile-button">
+                <img class="header-profilna" src="ikonice/person.png" alt="">
+                Korisničko ime
+            </div>
+        </button>
+    </header>
+    <main class="lista-main">
+        <div class="lista-panel" style="width: 60vw;">
+            <h2>Lista korisnika sa ulogama</h2><br>
+            <div class="lista-divova">
+                <div class="korisnik">
+                    <img class="slika-korisnika" src="ikonice/person.png" alt="">
+                    <div class="turnir-info">
+                        <h3 id="naziv-turnira">Templejt123</h3>
+                        <div class="korisnik-details">
+                            <h4 class="igra-informacija" id="igra-zanr-igre">
+                                Ime i Prezime: <span style="color: rgb(221, 202, 0);">Imenko Prezimenković</span>
+                            </h4>
+                            <h4 class="igra-informacija" id="igra-broj-igraca">
+                                Email: <span style="color: rgb(221, 202, 0);">imenkoprezimenko789@gmail.com</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <select name="uloga" id="izbor-uloge" class="select-field">
+                        <option value="visitor">Visitor</option>
+                        <option value="gamer">Gejmer</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
