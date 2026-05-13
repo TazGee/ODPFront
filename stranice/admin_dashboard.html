@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-dot"></div>
+            <h1 class="header-naslov">PulseGrid</h1>
+        </div>
+
+        <nav>
+            <a href="#" class="header-nav-btn">Početna</a>
+            <a href="#" class="header-nav-btn">Turniri</a>
+            <a href="#" class="header-nav-btn">Igre</a>
+            <a href="#" class="header-nav-btn">Admin</a>
+            <a href="#" class="header-nav-btn">O nama</a>
+        </nav>
+        <button class="header-user">
+            <div class="profile-button">
+                <img class="header-profilna" src="ikonice/person.png" alt="">
+                Korisničko ime
+            </div>
+        </button>
+    </header>
+    <main>
+        <div class="grid-container">
+            <div class="dashboard-card">
+                <img src="ikonice/tournament.png" alt="" class="dashboard-icon">
+                <div class="dashboard-card-content">
+                    <h2>Upravljanje turnirima</h2>
+                    <p>
+                        Stranica za upravljanje turnirima. Na ovoj stranici mozete izmeniti turnire, dodavati turnire i brisati turnire.
+                    </p>
+                    <button class="card-btn">Upravljanje turnirima</button>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <img src="ikonice/application.png" alt="" class="dashboard-icon">
+                <div class="dashboard-card-content">
+                    <h2>Upravljanje prijavama</h2>
+                    <p>
+                        Na ovoj stranici možete pogledati sve prijave timova na turnire i možete upravljati njima, odnosno možete 
+                        odbijati i prihvatati prijave.
+                    </p>
+                    <button class="card-btn">Upravljanje prijavama</button>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <img src="ikonice/crown.png" alt="" class="dashboard-icon">
+                <div class="dashboard-card-content">
+                    <h2>Upravljanje rezultatima mečeva</h2>
+                    <p>
+                        Na ovoj stranici možete unositi rezultate mečeva što automatski dovodi do napredovanja pobedničkih timova.
+                    </p>
+                    <button class="card-btn">Upravljanje rezultatima</button>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <img src="ikonice/joystick.png" alt="" class="dashboard-icon">
+                <div class="dashboard-card-content">
+                    <h2>Katalog igara</h2>
+                    <p>
+                        Lista svih igara dostupnih za turnire. Ovde možete dodavati ili brisati postojeće  igre iz sistema.
+                    </p>
+                    <button class="card-btn">Otvorite katalog igara</button>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <img src="ikonice/teams.png" alt="" class="dashboard-icon">
+                <div class="dashboard-card-content">
+                    <h2>Svi korisnici</h2>
+                    <p>
+                        Pregled liste svih korisnika i nekih od njihovih podataka. Moguća je izmena uloge korisnika.
+                    </p>
+                    <button class="card-btn">Pogledajte listu korisnika</button>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <img src="ikonice/health.png" alt="" class="dashboard-icon">
+                <div class="dashboard-card-content">
+                    <h2>Health dashboard</h2>
+                    <p>
+                        Pregled opterećenosti i health statusa baze podataka. Neophodno za praćenje performansi 
+                        aplikacije.
+                    </p>
+                    <button class="card-btn">Pogledajte listu korisnika</button>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <img src="ikonice/log.png" alt="" class="dashboard-icon">
+                <div class="dashboard-card-content">
+                    <h2>Audit log</h2>
+                    <p>
+                        Evidencija i pregled svih interakcija prijavljenih korisnika sa sajtom zabeležene na jednom mestu.
+                    </p>
+                    <button class="card-btn">Pogledajte listu korisnika</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
