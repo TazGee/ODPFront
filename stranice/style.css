@@ -547,7 +547,8 @@ p{
     margin:1vw auto 0 auto;
 }
 
-.igrac{
+.igrac,
+.audit {
     background:rgba(15,23,32,0.92);
     border:0.06vw solid var(--border);
     border-radius:0.5vw;
@@ -561,6 +562,11 @@ p{
     justify-content:space-between;
     align-content:center;
     padding:0.5vw;
+}
+
+.audit {
+    align-items:center;
+    width: 100%;
 }
 
 .slika-igraca{
@@ -645,6 +651,26 @@ p{
     display:flex;
     align-items: center;
     flex-direction: column;
+}
+
+.audit-profilna {
+    width: 2vw;
+    height: 2vw;
+    margin: auto 0 auto 0.8vw;
+}
+
+.audit-text {
+    text-align: center;
+    vertical-align: middle;
+    margin: auto 1vw;
+    font-size: 0.7vw;
+}
+
+.audit-text-header {
+    text-align: center;
+    vertical-align: middle;
+    margin: auto 1vw;
+    font-size: 0.7vw;
 }
 
 @media(max-width:900px){
