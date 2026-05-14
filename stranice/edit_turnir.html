@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uredi turnir</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-dot"></div>
+            <h1 class="header-naslov">PulseGrid</h1>
+        </div>
+
+        <nav>
+            <a href="#" class="header-nav-btn">Početna</a>
+            <a href="#" class="header-nav-btn">Turniri</a>
+            <a href="#" class="header-nav-btn">Igre</a>
+            <a href="#" class="header-nav-btn">O nama</a>
+        </nav>
+        <button class="header-user">
+            <div class="profile-button">
+                <img class="header-profilna" src="ikonice/person.png" alt="">
+                Korisničko ime
+            </div>
+        </button>
+    </header>
+    <main>
+        <div class="team-card" style="width: 30%;">
+            <form id="izmena-profila">
+            <h2 style="text-align: center; font-size: 32px;">Uredjivanje turnira</h2><br>
+            <div class="uredjivanje-profila-lista">
+                <div class="uredjivanje-profila-polje">
+                    <p>Naziv turnira</p>
+                    <input type="text" class="input-field" value="IEM Katowice 2014">
+                    <p>Format turnira</p>
+                    <select name="status" id="izbor-formata" class="select-field izmena">
+                        <option value="svi">Svi</option>
+                        <option value="bo1">Best of 1</option>
+                        <option value="bo3">Best of 3</option>
+                        <option value="bo5">Best of 5</option>
+                    </select>
+                    <p>Igra</p>
+                    <select name="igre" id="izbor-igre" class="select-field izmena">
+                        <option value="cs2">Counter-Strike 2</option>
+                        <option value="lol">League Of Legends</option>
+                        <option value="haloinfinite">Halo Infinite</option>
+                        <option value="warthunder">War Thunder</option>
+                    </select>
+                    <p>Status turnira</p>
+                    <select name="status" id="izbor-statusa" class="select-field izmena">
+                        <option value="aktivan">Aktivne prijave</option>
+                        <option value="traje">U toku</option>
+                        <option value="zavrsen">Zavrseni</option>
+                    </select>
+                    <p>Maksimalan broj timova</p>
+                    <input type="number" class="input-field" value="5">
+                    <p>Nagradni fond ($)</p>
+                    <input type="number" class="input-field" value="5">
+                    <p>Rok za prijavu</p>
+                    <input type="datetime-local" class="input-field"> 
+                </div>
+                <br>
+            </div>
+            <br><br>
+            <input type="submit" class="input-button" value="Izmeni">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
