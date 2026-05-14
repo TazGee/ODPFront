@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bracket</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-dot"></div>
+            <h1 class="header-naslov">PulseGrid</h1>
+        </div>
+        <nav>
+            <a href="#" class="header-nav-btn">Početna</a>
+            <a href="#" class="header-nav-btn">Turniri</a>
+            <a href="#" class="header-nav-btn">Bracket</a>
+        </nav>
+        <button class="header-user">
+            <div class="profile-button">
+                <img class="header-profilna" src="ikonice/person.png">
+                Korisničko ime
+            </div>
+        </button>
+    </header>
+    <main class="lista-main">
+        <div class="lista-panel bracket-panel">
+            <div class="row-space-between">
+                <div class="team-card" style="width: 100%;">
+                    <h2 style="margin: auto;">Naziv turnira</h2><br>
+                    <div class="row">
+                        <div class="team-panel">
+                            <div class="lista-igraca-informacije">
+                                <div class="infocard">
+                                    <img class="slika-igraca" src="igre/cs2.jpg" alt="">
+                                    <h3 style="text-align: center; margin: auto;">Counter-Strike 2</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-panel">
+                            <div class="lista-igraca-informacije">
+                                <div class="infocard">
+                                    <img class="slika-igraca" src="ikonice/teams.png" alt="">
+                                    <h3 style="text-align: center; margin: auto;">16</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-panel">
+                            <div class="lista-igraca-informacije">
+                                <div class="infocard">
+                                    <img class="slika-igraca" src="ikonice/money.png" alt="">
+                                    <h3 style="text-align: center; margin: auto;">$1.000.000</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="team-panel">
+                            <div class="lista-igraca-informacije">
+                                <div class="infocard">
+                                    <img class="slika-igraca" src="ikonice/status.png" alt="">
+                                    <h3 style="text-align: center; margin: auto;">U toku</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-panel">
+                            <div class="lista-igraca-informacije">
+                                <div class="infocard">
+                                    <img class="slika-igraca" src="ikonice/calendar.png" alt="">
+                                    <h3 style="text-align: center; margin: auto;">16-12-2025 16:00</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-panel">
+                            <div class="lista-igraca-informacije">
+                                <div class="infocard">
+                                    <img class="slika-igraca" src="ikonice/tournament.png" alt="">
+                                    <h3 style="text-align: center; margin: auto;">TBD</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <div class="team-card" style="width: 100%;">
+                <h2 style="margin: auto;">Bracket</h2><br>
+                <div id="bracket"></div>
+            </div>
+        </div>
+    </main>
+    <script src="bracket.js"></script>
+</body>
+</html>
