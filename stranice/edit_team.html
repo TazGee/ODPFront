@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uređivanje tima</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-dot"></div>
+            <h1 class="header-naslov">PulseGrid</h1>
+        </div>
+
+        <nav>
+            <a href="#" class="header-nav-btn">Početna</a>
+            <a href="#" class="header-nav-btn">Turniri</a>
+            <a href="#" class="header-nav-btn">Igre</a>
+            <a href="#" class="header-nav-btn">O nama</a>
+        </nav>
+        <button class="header-user">
+            <div class="profile-button">
+                <img class="header-profilna" src="ikonice/person.png" alt="">
+                Korisničko ime
+            </div>
+        </button>
+    </header>
+    <main>
+        <div class="team-card" style="width: 80%;">
+            <h2 style="text-align: center; font-size: 32px;">Uređivanje tima</h2><br>
+            <div class="row">
+                <div class="team-panel">
+                    <h3 style="text-align: center;">Lista igraca</h3>
+                    <div class="lista-igraca-informacije">
+                        <div class="igrac">
+                            <img class="slika-igraca" src="ikonice/person.png" alt="">
+                            <p class="ime-igraca">ŽilićLanmi123</p>
+                            <button class="team-igrac">Napusti tim</button>
+                        </div>
+                        <div class="igrac">
+                            <img class="slika-igraca" src="ikonice/person.png" alt="">
+                            <p class="ime-igraca">TazGee04</p>
+                            <div class="row">
+                                <button class="team-igrac unapredi">Unapredi</button>
+                                <button class="team-igrac">Izbaci</button>
+                            </div>
+                        </div>
+                        <div class="igrac">
+                            <img class="slika-igraca" src="ikonice/person.png" alt="">
+                            <p class="ime-igraca">donvlepa69</p>
+                            <div class="row">
+                                <button class="team-igrac unapredi">Unapredi</button>
+                                <button class="team-igrac">Izbaci</button>
+                            </div>
+                        </div>
+                        <div class="igrac">
+                            <img class="slika-igraca" src="ikonice/person.png" alt="">
+                            <p class="ime-igraca">Skopi</p>
+                            <div class="row">
+                                <button class="team-igrac unapredi">Unapredi</button>
+                                <button class="team-igrac">Izbaci</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-panel">
+                    <form id="izmena-tima">
+                        <h3 style="text-align: center;">Informacije</h3>
+                        <div class="lista-igraca-informacije">
+                            <div class="uredjivanje-profila-polje">
+                                <p>Naziv tima</p>
+                                <input type="text" class="input-field" value="Astralis">
+                                <p>Maksimalan broj članova</p>
+                                <input type="number" class="input-field" value="4">
+                                <p>Opis tima</p>
+                                <input type="text" class="input-field" value="Opis tima bla bla bla">
+                            </div>
+                            <br>
+                            <div class="uredjivanje-profila-polje">
+                                <img src="timovi/Astralis_logo.svg.png" class="edit-team-izmena-slike">
+                                <br>
+                                <input class="choose-file" type="file" /><br>
+                                <input type="submit" class="input-button" value="Izmeni"><br>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -415,7 +415,8 @@ form{
     border-radius:0.5vw;
 }
 
-.turnir-detalji{
+.turnir-detalji,
+.turnir-prijavi{
     width:fit-content;
     height:2.2vw;
     padding:0 1vw;
@@ -429,7 +430,12 @@ form{
     transition:0.2s;
 }
 
-.turnir-detalji:hover{
+.turnir-prijavi {
+    width: 7vw;
+}
+
+.turnir-detalji:hover,
+.turnir-prijavi:hover{
     transform:translateY(-0.1vw);
     box-shadow:0 0 1vw rgba(255,47,109,0.35);
 }
@@ -502,6 +508,7 @@ form{
     text-align:center;
     color:white;
     font-weight:bold;
+    height: 1.5vw;
 }
 
 .select-field option{
@@ -626,7 +633,17 @@ p{
     width: 10.5vw;
     height: 10.5vw;
     margin: auto;
-    background-image: url('ikonice/person.png');
+    background-size: contain;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 1vw;
+    margin: 1vw;
+}
+
+.edit-team-izmena-slike {
+    width: 8vw;
+    height: 8vw;
+    margin: auto;
     background-size: contain;
     background-color: transparent;
     border: transparent;
@@ -905,6 +922,42 @@ polyline{
     color:#6d8092;
     font-size:.8rem;
 }
+
+.team-igrac{
+    width:fit-content;
+    height:2.2vw;
+    padding:0 1vw;
+    border:none;
+    border-radius:0.5vw;
+    background:#b80000;
+    color:white;
+    font-size:0.8rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.2s;
+    margin: auto 0.25vw auto 0.5vw;
+}
+
+.team-igrac.unapredi{
+    width:fit-content;
+    height:2.2vw;
+    padding:0 1vw;
+    border:none;
+    border-radius:0.5vw;
+    background:#a77a00;
+    color:white;
+    font-size:0.8rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.2s;
+    margin: auto 0;
+}
+
+.team-igrac:hover{
+    transform:translateY(-0.1vw);
+    box-shadow:0 0 1vw rgba(255,47,109,0.35);
+}
+
 
 @media(max-width:900px){
 
