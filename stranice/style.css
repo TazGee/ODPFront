@@ -381,7 +381,8 @@ form{
 .igra,
 .korisnik,
 .tim,
-.mec {
+.mec,
+.prijava {
     height:6vw;
     background:rgba(15,23,32,0.92);
     border:0.06vw solid var(--border);
@@ -403,7 +404,8 @@ form{
     width:90%;
 }
 
-.korisnik {
+.korisnik,
+.prijava {
     height: 5vw;
 }
 
@@ -414,6 +416,14 @@ form{
     height:4vw;
     border-radius:0.5vw;
 }
+
+.slika-u-prijavi {
+    width:4vw;
+    height:4vw;
+    border-radius:0.5vw;
+    margin: auto;
+}
+
 
 .turnir-detalji,
 .turnir-prijavi{
@@ -450,16 +460,34 @@ form{
     margin:0.5vw;
 }
 
-#naziv-turnira{
+.prijava-info{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    padding:0 1vw;
+    margin:0.5vw;
+}
+
+#naziv-turnira,
+#naziv-tima{
     font-size:1.6rem;
 }
 
 .turnir-details,
-.igra-details,
-.korisnik-details {
+.igra-details {
     display:flex;
     align-items:center;
     justify-content:space-between;
+    padding:0 1vw;
+    width:100%;
+    margin:0.5vw;
+}
+
+.team-details {
+    display:flex;
+    align-items:center;
+    justify-content:center;
     padding:0 1vw;
     width:100%;
     margin:0.5vw;
@@ -958,6 +986,24 @@ polyline{
     box-shadow:0 0 1vw rgba(255,47,109,0.35);
 }
 
+.manage-prijava{
+    width:max-content;
+    height:2.2vw;
+    padding:0 1vw;
+    border:none;
+    border-radius:0.5vw;
+    color:white;
+    font-size:0.8rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.2s;
+    margin: auto 0.25vw auto 0.5vw;
+}
+
+.manage-prijava:hover{
+    transform:translateY(-0.1vw);
+    box-shadow:0 0 1vw rgba(255,47,109,0.35);
+}
 
 @media(max-width:900px){
 
