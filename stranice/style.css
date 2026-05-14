@@ -505,7 +505,7 @@ form{
 }
 
 .filtriranje-turnira{
-    height:5vw;
+    height:3vw;
     border:0.06vw solid var(--border);
     border-radius:0.8vw;
     backdrop-filter:blur(0.5vw);
@@ -951,7 +951,8 @@ polyline{
     font-size:.8rem;
 }
 
-.team-igrac{
+.team-igrac,
+.turnir-obrisi {
     width:fit-content;
     height:2.2vw;
     padding:0 1vw;
@@ -966,7 +967,8 @@ polyline{
     margin: auto 0.25vw auto 0.5vw;
 }
 
-.team-igrac.unapredi{
+.team-igrac.unapredi,
+.turnir-obrisi.izmeni{
     width:fit-content;
     height:2.2vw;
     padding:0 1vw;
@@ -981,7 +983,8 @@ polyline{
     margin: auto 0;
 }
 
-.team-igrac:hover{
+.team-igrac:hover,
+.turnir-obrisi:hover {
     transform:translateY(-0.1vw);
     box-shadow:0 0 1vw rgba(255,47,109,0.35);
 }

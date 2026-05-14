@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turniri</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-dot"></div>
+            <h1 class="header-naslov">PulseGrid</h1>
+        </div>
+        <nav>
+            <a href="#" class="header-nav-btn">Početna</a>
+            <a href="#" class="header-nav-btn">Turniri</a>
+            <a href="#" class="header-nav-btn">Igre</a>
+            <a href="#" class="header-nav-btn">O nama</a>
+        </nav>
+        <button class="header-user">
+            <div class="profile-button">
+                <img class="header-profilna" src="ikonice/person.png" alt="">
+                Korisničko ime
+            </div>
+        </button>
+    </header>
+    <main class="lista-main">
+        <div class="lista-panel" style="width: 80%;">
+            <h2>Lista turnira</h2>
+            <div class="filtriranje-turnira">
+                Filtriranje turnira
+                <div class="filter-field">
+                    <h3 style="font-size: 0.7vw; margin: auto 0.4vw;">Igra:</h3>
+                    <select name="igre" id="izbor-igre" class="select-field">
+                        <option value="svi">Sve</option>
+                        <option value="cs2">Counter-Strike 2</option>
+                        <option value="lol">League Of Legends</option>
+                        <option value="haloinfinite">Halo Infinite</option>
+                        <option value="warthunder">War Thunder</option>
+                    </select>
+                </div>
+                <div class="filter-field">
+                    <h3 style="font-size: 0.7vw; margin: auto 0.4vw;">Status turnira:</h3>
+                    <select name="status" id="izbor-statusa" class="select-field">
+                        <option value="svi">Svi</option>
+                        <option value="aktivan">Aktivne prijave</option>
+                        <option value="traje">U toku</option>
+                        <option value="zavrsen">Zavrseni</option>
+                    </select>
+                </div>
+                <div class="filter-field">
+                    <h3 style="font-size: 0.7vw; margin: auto 0.4vw;">Format turnira:</h3>
+                    <select name="status" id="izbor-formata" class="select-field">
+                        <option value="svi">Svi</option>
+                        <option value="bo1">Best of 1</option>
+                        <option value="bo3">Best of 3</option>
+                        <option value="bo5">Best of 5</option>
+                    </select>
+                </div>
+                <div class="filter-field">
+                    <button class="turnir-obrisi" style="background: green; height: 1.6vw;">+ Dodaj turnir</button>
+                </div>
+            </div>
+            <div class="lista-divova">
+                <div class="turnir">
+                    <img class="slika-igrice" src="igre/cs2.jpg" alt="">
+                    <div class="turnir-info">
+                        <h3 id="naziv-turnira">IEM Atlanta 2026 CS2 Major Tournament</h3>
+                        <div class="turnir-details">
+                            <h4 class="turnir-informacija" id="turnir-naziv-igre">
+                                Naziv igre<br><span style="color: rgb(221, 202, 0);">Counter-Strike 2</span>
+                            </h4>
+                            <h4 class="turnir-informacija" id="turnir-format-igre">
+                                Format<br><span style="color: rgb(189, 225, 255);">Nepoznat</span>
+                            </h4>
+                            <h4 class="turnir-informacija" id="turnir-maks-broj-timova-igre">
+                                Maksimalan broj timova<br><span style="color: rgb(189, 225, 255);">12</span>
+                            </h4>
+                            <h4 class="turnir-informacija" id="turnir-rok-za-prijavu">
+                                Rok za prijavu<br><span style="color: rgb(189, 225, 255);">12-12-2025</span>
+                            </h4>
+                            <h4 class="turnir-informacija" id="turnir-nagradni-fond">
+                                Nagradni fond<br><span style="color: rgb(9, 172, 47);">$1.000.000</span>
+                            </h4>
+                            <h4 class="turnir-informacija" id="turnir-status">
+                                Status<br><span style="color: rgb(9, 172, 47);">Aktivan</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <button class="turnir-obrisi izmeni">Izmeni</button>
+                    <button class="turnir-obrisi">Obriši</button>
+                </div>
+                <div class="turnir">
+                    <img class="slika-igrice" src="igre/halo.webp" alt="">
+                    <div class="turnir-info">
+                        <h3 id="naziv-turnira">HCS World Championship Seattle 2026</h3>
+                        <div class="turnir-details">
+                            <h4 class="turnir-informacija" id="turnir-naziv-igre">
+                                Naziv igre<br><span style="color: rgb(221, 202, 0);">Halo Infinite</span>
+                            </h4>
+                            <h4 class="turnir-informacija" id="turnir-naziv-igre">
+                                Format<br><span style="color: rgb(189, 225, 255);">Best of 3</span>
+                            </h4>
+                            <h4 class="turnir-informacija" id="turnir-naziv-igre">
+                                Maksimalan broj timova<br><span style="color: rgb(189, 225, 255);">15</span>
+                            </h4>
+                            <h4 class="turnir-informacija" id="turnir-naziv-igre">
+                                Rok za prijavu<br><span style="color: rgb(189, 225, 255);">12-12-2025</span>
+                            </h4>
+                            <h4 class="turnir-informacija" id="turnir-naziv-igre">
+                                Nagradni fond<br><span style="color: rgb(9, 172, 47);">$600.000</span>
+                            </h4>
+                            <h4 class="turnir-informacija" id="turnir-naziv-igre">
+                                Status<br><span style="color: rgb(143, 0, 0);">Istekao</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <button class="turnir-obrisi izmeni">Izmeni</button>
+                    <button class="turnir-obrisi">Obriši</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
