@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unos rezultata</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-dot"></div>
+            <h1 class="header-naslov">PulseGrid</h1>
+        </div>
+
+        <nav>
+            <a href="#" class="header-nav-btn">Početna</a>
+            <a href="#" class="header-nav-btn">Turniri</a>
+            <a href="#" class="header-nav-btn">Igre</a>
+            <a href="#" class="header-nav-btn">Admin</a>
+            <a href="#" class="header-nav-btn">O nama</a>
+        </nav>
+        <button class="header-user">
+            <div class="profile-button">
+                <img class="header-profilna" src="ikonice/person.png" alt="">
+                Korisničko ime
+            </div>
+        </button>
+    </header>
+    <main>
+        <div class="team-card">
+            <form id="unosenje-rezultata">
+            <h2 style="text-align: center; font-size: 32px;">Unošenje rezultata</h2><br>
+            <h3 style="text-align: center; margin: 0 0 0.4vw 0;">Izaberite turnir</h3>
+            <select name="turnir" id="izbor-turnira" class="select-field" style="width: 50%; margin: auto;">
+                <option value=".">IEM Atlanta 2026 CS2 Major Tournament</option>
+                <option value=".">HCS World Championship Seattle 2026</option>
+                <option value=".">War Thunder World Championship 2026</option>
+            </select><br>
+            <h3 style="text-align: center; margin: 0 0 0.4vw 0;">Izaberite meč</h3>
+            <select name="turnir" id="izbor-turnira" class="select-field" style="width: 50%; margin: auto;">
+                <option value=".">Astralis VS Natus Vincere</option>
+            </select><br>
+            <div class="row">
+                <div class="team-panel">
+                    <div class="uredjivanje-profila-lista">
+                        <div class="uredjivanje-profila-polje"><br>
+                            <h3>Astralis</h3>
+                            <img src="timovi/Astralis_logo.svg.png" class="edit-profile-izmena-slike">
+                            <br>
+                            <p>Unesite rezultat</p>
+                            <input type="number" class="input-field" value="0">
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="team-panel">
+                    <div class="uredjivanje-profila-lista">
+                        <div class="uredjivanje-profila-polje"><br>
+                            <h3>Natus Vincere</h3>
+                            <img src="timovi/NAVI-Logo.svg.png" class="edit-profile-izmena-slike">
+                            <br>
+                            <p>Unesite rezultat</p>
+                            <input type="number" class="input-field" value="0">
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <input type="submit" class="input-button" value="Sačuvaj rezultat">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
