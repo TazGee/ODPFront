@@ -307,6 +307,12 @@ form{
     display:flex;
 }
 
+.row-space-between{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .header-user{
     height:2.3vw;
     padding:0 0.3vw;
@@ -374,7 +380,8 @@ form{
 .turnir,
 .igra,
 .korisnik,
-.tim {
+.tim,
+.mec {
     height:6vw;
     background:rgba(15,23,32,0.92);
     border:0.06vw solid var(--border);
@@ -391,7 +398,8 @@ form{
     margin:0.5vw;
 }
 
-.igra{
+.igra,
+.mec{
     width:90%;
 }
 
@@ -709,6 +717,54 @@ p{
     padding: 1vw;
 }
 
+.naziv-tima {
+    margin: auto 2vw; 
+    white-space: nowrap;
+    font-size: 1.3vw;
+}
+
+.team{
+    flex:1;
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    overflow: hidden;
+}
+
+.team.left{
+    justify-content:flex-start;
+}
+
+.team.right{
+    justify-content:flex-end;
+}
+
+.mec-info{
+    width:15vw;
+    text-align:center;
+    flex-shrink:0;
+    display: flex;
+    flex-direction: column;
+}
+
+.obrisi-sa-watchlist-btn{
+    padding: 0.2vw;
+    margin: 0.3vw auto 0 auto;
+    border:none;
+    border-radius:0.45vw;
+    color:white;
+    cursor:pointer;
+    transition:0.2s;
+    background-color: transparent;
+    width: 8vw;
+    font-size: 0.7vw;
+}
+
+.obrisi-sa-watchlist-btn:hover{
+    background:#b02e5967;
+    box-shadow:0 0 1vw rgba(255,47,109,0.4);
+}
+
 @media(max-width:900px){
 
     html{
@@ -727,7 +783,8 @@ p{
     }
 
     .turnir,
-    .igra{
+    .igra,
+    .mec{
         flex-direction:column;
         height:auto;
         gap:1vw;
