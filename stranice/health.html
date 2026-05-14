@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-dot"></div>
+            <h1 class="header-naslov">PulseGrid</h1>
+        </div>
+
+        <nav>
+            <a href="#" class="header-nav-btn">Početna</a>
+            <a href="#" class="header-nav-btn">Turniri</a>
+            <a href="#" class="header-nav-btn">Igre</a>
+            <a href="#" class="header-nav-btn">Admin</a>
+            <a href="#" class="header-nav-btn">O nama</a>
+        </nav>
+        <button class="header-user">
+            <div class="profile-button">
+                <img class="header-profilna" src="ikonice/person.png" alt="">
+                Korisničko ime
+            </div>
+        </button>
+    </header>
+    <main>
+        <div class="team-card" style="width: 80%;">
+            <h2 style="text-align: center; font-size: 32px;">Health Dashboard</h2><br>
+            <div class="row">
+                <div class="health-panel">
+                    <div class="health-lista">
+                        <div class="node">
+                            <div class="ring" style="--percent:32;">
+                                <div class="inner">
+                                    <span class="value">32%</span>
+                                    <span class="label">SLAVE 1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 style="text-align: center; font-size: 1.5vw; color: green;">
+                            Healthy
+                        </h2><br>
+                        <div class="graph-container">
+                            <div class="y-labels">
+                                <span>100%</span>
+                                <span>80%</span>
+                                <span>60%</span>
+                                <span>40%</span>
+                                <span>20%</span>
+                                <span>0%</span>
+                            </div>
+                            <div class="graph">
+                                <div class="grid"></div>
+                                <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
+                                    <polyline points=" 0,220 100,180 200,190 300,120 400,140
+                                            500,90 600,110 700,70 800,130 900,100 1000,40"/>
+                                </svg>
+                                <div class="x-labels">
+                                    <span>NOW</span>
+                                    <span>10s</span>
+                                    <span>20s</span>
+                                    <span>30s</span>
+                                    <span>40s</span>
+                                    <span>50s</span>
+                                    <span>60s</span>
+                                    <span>70s</span>
+                                    <span>80s</span>
+                                    <span>90s</span>
+                                    <span>100s</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="health-panel">
+                    <div class="health-lista">
+                        <div class="node">
+                            <div class="ring" style="--percent:57;">
+                                <div class="inner">
+                                    <span class="value">57%</span>
+                                    <span class="label">MASTER</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 style="text-align: center; font-size: 1.5vw; color: rgb(255, 174, 0);">
+                            Degraded
+                        </h2><br>
+                        <div class="graph-container">
+                            <div class="y-labels">
+                                <span>100%</span>
+                                <span>80%</span>
+                                <span>60%</span>
+                                <span>40%</span>
+                                <span>20%</span>
+                                <span>0%</span>
+                            </div>
+                            <div class="graph">
+                                <div class="grid"></div>
+                                <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
+                                    <polyline points=" 0,220 100,180 200,190 300,120 400,140
+                                            500,90 600,110 700,70 800,130 900,100 1000,40"/>
+                                </svg>
+                                <div class="x-labels">
+                                    <span>NOW</span>
+                                    <span>10s</span>
+                                    <span>20s</span>
+                                    <span>30s</span>
+                                    <span>40s</span>
+                                    <span>50s</span>
+                                    <span>60s</span>
+                                    <span>70s</span>
+                                    <span>80s</span>
+                                    <span>90s</span>
+                                    <span>100s</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="health-panel">
+                    <div class="health-lista">
+                        <div class="node">
+                            <div class="ring" style="--percent:100;">
+                                <div class="inner">
+                                    <span class="value">100%</span>
+                                    <span class="label">SLAVE 2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 style="text-align: center; font-size: 1.5vw; color: rgb(180, 0, 0);">
+                            Unreachable
+                        </h2><br>
+                        <div class="graph-container">
+                            <div class="y-labels">
+                                <span>100%</span>
+                                <span>80%</span>
+                                <span>60%</span>
+                                <span>40%</span>
+                                <span>20%</span>
+                                <span>0%</span>
+                            </div>
+                            <div class="graph">
+                                <div class="grid"></div>
+                                <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
+                                    <polyline points=" 0,220 100,180 200,190 300,120 400,140
+                                            500,90 600,110 700,70 800,130 900,100 1000,40"/>
+                                </svg>
+                                <div class="x-labels">
+                                    <span>NOW</span>
+                                    <span>10s</span>
+                                    <span>20s</span>
+                                    <span>30s</span>
+                                    <span>40s</span>
+                                    <span>50s</span>
+                                    <span>60s</span>
+                                    <span>70s</span>
+                                    <span>80s</span>
+                                    <span>90s</span>
+                                    <span>100s</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </main>
+</body>
+</html>
